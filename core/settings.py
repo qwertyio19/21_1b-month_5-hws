@@ -89,15 +89,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': ''
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DRF 21',         # Имя базы данных, созданной в pgAdmin
+        'USER': 'DRF 21',             # Имя пользователя, созданного в pgAdmin
+        'PASSWORD': '12345678',     # Пароль пользователя
+        'HOST': 'localhost',          # Обычно localhost для локальной базы
+        'PORT': '5432',               # Порт, по умолчанию 5432
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
